@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import com.jfoenix.controls.JFXListView?>
+<?import com.jfoenix.controls.JFXTreeTableView?>
+<VBox xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.baro.utils.SearchStoreList">
+    <HBox>
+        <spacing>10</spacing>
+        <Label text="가게검색 : " />
+        <TextField fx:id="store_search_text_field" prefWidth="500"/>
+        <Button fx:id="search_button" text="검색"/>
+    </HBox>
+    <VBox fx:id="store_list_vbox">
+        <spacing>10</spacing>
+        <TableView fx:id="search_store_result_list" prefWidth="500" onMouseClicked="#onClick">
+            <columns>
+                <TableColumn fx:id="store_id" text="store_id" prefWidth="100"/>
+                <TableColumn fx:id="store_name" text="store_name" prefWidth="200"/>
+            </columns>
+        </TableView>
+    </VBox>
+</VBox>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="250.0" prefWidth="1150.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.baro.StoreInsertPageController">
+   <children>
+      <VBox layoutX="43.0" layoutY="25.0" prefHeight="635.0" prefWidth="900.0" spacing="15.0">
+         <children>
+            <Label alignment="CENTER" prefHeight="14.0" prefWidth="597.0" text="추가" />
+            <HBox prefHeight="65.0" prefWidth="418.0" spacing="10.0">
+               <children>
+                  <Label prefHeight="14.0" prefWidth="200.0" text="search owner id by phone" />
+                  <TextField fx:id="ownerPhoneInput" prefHeight="29.0" prefWidth="315.0" />
+                  <Button fx:id="searchBtn" onAction="#pressSearch" mnemonicParsing="false" text="검색" />
+                  <Label prefHeight="14.0" prefWidth="200.0" text="'-' 없이 ex) 01077777777" />
+               </children>
+            </HBox>
+            <HBox prefHeight="65.0" prefWidth="418.0" spacing="10.0">
+               <children>
+                  <Label prefHeight="14.0" prefWidth="200.0" />
+                  <TextField fx:id="searchResult" disable="true" prefHeight="29.0" prefWidth="315.0" />
+               </children>
+            </HBox>
+            <HBox prefHeight="65.0" prefWidth="418.0" spacing="10.0">
+               <children>
+                  <Label prefHeight="14.0" prefWidth="200.0" text="type_code : " />
+                  <ChoiceBox fx:id="type_code_choice" prefHeight="22.0" prefWidth="314.0" />
+               </children>
+            </HBox>
+            <HBox prefHeight="65.0" prefWidth="418.0" spacing="10.0">
+               <children>
+                  <Label prefHeight="14.0" prefWidth="200.0" text="store_name : " />
+                  <TextField fx:id="storeNameInput" prefHeight="29.0" prefWidth="315.0" />
+               </children>
+            </HBox>
+            <HBox prefHeight="29.0" prefWidth="531.0" spacing="10.0">
+               <children>
+                  <Label prefHeight="14.0" prefWidth="200.0" text="store_latitude :" />
+                  <TextField fx:id="storeLatitudeInput" prefHeight="29.0" prefWidth="315.0" />
+               </children>
+            </HBox>
+            <HBox prefHeight="65.0" prefWidth="418.0" spacing="10.0">
+               <children>
+                  <Label  prefHeight="14.0" prefWidth="200.0" text="store_longitude : " />
+                  <TextField fx:id="storeLongitudeInput" prefHeight="29.0" prefWidth="315.0" />
+               </children>
+            </HBox>
+            <HBox prefHeight="65.0" prefWidth="418.0" spacing="10.0">
+               <children>
+                  <Label  prefHeight="14.0" prefWidth="200.0" text="store_opentime" />
+                  <TextField fx:id="storeOpenTimeInput" prefHeight="29.0" prefWidth="315.0" />
+                  <Label prefHeight="14.0" prefWidth="200.0" text="ex) 09:00"/>
+               </children>
+            </HBox>
+            <HBox prefHeight="65.0" prefWidth="418.0" spacing="10.0">
+               <children>
+                  <Label  prefHeight="14.0" prefWidth="200.0" text="store_closetime" />
+                  <TextField fx:id="storeCloseTimeInput" prefHeight="29.0" prefWidth="315.0" />
+                  <Label prefHeight="14.0" prefWidth="200.0" text="ex) 18:00"/>
+               </children>
+            </HBox>
+            <HBox prefHeight="65.0" prefWidth="418.0" spacing="10.0">
+               <children>
+                  <Label  prefHeight="14.0" prefWidth="200.0" text="store_phone" />
+                  <TextField fx:id="storePhoneInput" prefHeight="29.0" prefWidth="315.0" />
+                  <Label prefHeight="14.0" prefWidth="200.0" text="'-' 없이 ex) 01077777777" />
+               </children>
+            </HBox>
+            <HBox prefHeight="65.0" prefWidth="418.0" spacing="10.0">
+               <children>
+                  <Label  prefHeight="14.0" prefWidth="200.0" text="store_dayoff" />
+                  <TextField fx:id="storeDayOFFInput" prefHeight="29.0" prefWidth="315.0" />
+               </children>
+            </HBox>
+            <HBox prefHeight="65.0" prefWidth="418.0" spacing="10.0">
+               <children>
+                  <Label  prefHeight="14.0" prefWidth="200.0" text="store_location" />
+                  <TextField fx:id="storeLocationInput" prefHeight="29.0" prefWidth="315.0" />
+               </children>
+            </HBox>
+            <HBox  prefHeight="65.0" prefWidth="418.0" spacing="10.0">
+               <children>
+                  <Label prefHeight="14.0" prefWidth="200.0" text="store_info" />
+                  <TextField fx:id="storeInfoInput" prefHeight="29.0" prefWidth="315.0" />
+               </children>
+            </HBox>
+<!--            <HBox prefHeight="65.0" prefWidth="418.0" spacing="10.0">-->
+<!--               <children>-->
+<!--                  <Label  prefHeight="14.0" prefWidth="200.0" text="store_image" />-->
+<!--                  <TextField fx:id="storeImageInput" prefHeight="29.0" prefWidth="315.0" />-->
+<!--                  <Label prefHeight="14.0"  text="사진이 없을경우 'default.png', 있다면 *.png로 저장" />-->
+<!--               </children>-->
+<!--            </HBox>-->
+            <HBox prefHeight="65.0" prefWidth="418.0" spacing="10.0">
+               <children>
+                  <Label  prefHeight="14.0" prefWidth="200.0" text="representative_name" />
+                  <TextField fx:id="representativeNameInput" prefHeight="29.0" prefWidth="315.0" />
+               </children>
+            </HBox>
+            <HBox prefHeight="65.0" prefWidth="418.0" spacing="10.0">
+               <children>
+                  <Label  prefHeight="14.0" prefWidth="200.0" text="business_number" />
+                  <TextField fx:id="businessNumberInput" prefHeight="29.0" prefWidth="315.0" />
+               </children>
+            </HBox>
+         </children></VBox>
+      <Button fx:id="addBtn" layoutX="273.0" layoutY="772.0" mnemonicParsing="false" onAction="#pressAdd" text="추가" />
+   </children>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+</AnchorPane>

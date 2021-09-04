@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="244.0" prefWidth="1150.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.baro.TypeAddPageController">
+   <children>
+      <VBox prefHeight="200.0" prefWidth="559.0">
+         <children>
+            <Label alignment="CENTER" contentDisplay="TOP" prefHeight="30.0" prefWidth="559.0" text="추가" />
+            <HBox prefHeight="49.0" prefWidth="367.0" spacing="20.0">
+               <children>
+                  <Label alignment="CENTER" prefHeight="29.0" prefWidth="155.0" text="type_code :" />
+                  <TextField fx:id="inputTypeCode" alignment="CENTER_RIGHT" prefHeight="29.0" prefWidth="383.0" />
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </HBox>
+            <HBox prefHeight="49.0" prefWidth="367.0" spacing="20.0">
+               <children>
+                  <Label alignment="CENTER" prefHeight="29.0" prefWidth="155.0" text="type_name :" />
+                  <TextField fx:id="inputTypeName" alignment="CENTER_RIGHT" prefHeight="29.0" prefWidth="383.0" />
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </HBox>
+
+         </children>
+      </VBox>
+      <Button fx:id="saveBtn" alignment="CENTER" contentDisplay="CENTER" layoutX="246.0" layoutY="200.0" mnemonicParsing="false" onAction="#save" text="저장" />
+      <ImageView fx:id="image" fitHeight="150.0" fitWidth="200.0" layoutX="624.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="saveImage" onAction="#getImage" layoutX="684.0" layoutY="189.0" mnemonicParsing="false" text="이미지 선택" />
+   </children>
+</AnchorPane>

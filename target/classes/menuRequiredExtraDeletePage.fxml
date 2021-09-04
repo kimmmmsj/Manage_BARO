@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import com.sun.javafx.scene.control.skin.TableHeaderRow?>
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.baro.RequiredExtraDeletePageController">
+    <HBox fx:id="store_list_hbox"/>
+    <HBox fx:id="required_list_box">
+        <TableView fx:id="required_table_view" onMouseClicked="#onClick">
+            <columns>
+                <TableColumn fx:id="store_id" text="store_id"/>
+                <TableColumn fx:id="extra_group" text="extra_group"/>
+                <TableColumn fx:id="extra_id" text="extra_id"/>
+                <TableColumn fx:id="extra_price" text="extra_price"/>
+                <TableColumn fx:id="extra_name" text="extra_name"/>
+            </columns>
+        </TableView>
+    </HBox>
+    <Button fx:id="delete_button" text="삭제"/>
+</VBox>

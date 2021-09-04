@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import com.jfoenix.controls.JFXListView?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.baro.CategoryDeletePageController">
+    <VBox AnchorPane.topAnchor="10" AnchorPane.leftAnchor="10" AnchorPane.rightAnchor="10">
+        <spacing>50</spacing>
+        <HBox>
+            <spacing>10</spacing>
+            <Label text="가게검색 : " />
+            <TextField fx:id="store_search_text_field" prefWidth="500"/>
+            <Button fx:id="search_button" text="검색"/>
+        </HBox>
+        <VBox fx:id="store_list_vbox">
+            <spacing>10</spacing>
+            <JFXListView fx:id="search_store_result_list"/>
+        </VBox>
+        <VBox fx:id="insert_category_name_vbox">
+            <HBox>
+                <spacing>10</spacing>
+                <JFXListView fx:id="category_name_list"/>
+            </HBox>
+            <Button fx:id="delete_category_name_button"  text="삭제"/>
+        </VBox>
+    </VBox>
+</AnchorPane>

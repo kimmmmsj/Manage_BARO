@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import com.jfoenix.controls.JFXListView?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.baro.CouponDeletePageController">
+    <VBox AnchorPane.rightAnchor="10" AnchorPane.leftAnchor="10" AnchorPane.topAnchor="10">
+        <JFXListView fx:id="coupon_list_view" />
+        <Button fx:id="coupon_delete_button" text="삭제"/>
+    </VBox>
+</AnchorPane>

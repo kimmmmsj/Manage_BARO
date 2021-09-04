@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="244.0" prefWidth="1150.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.baro.OwnerRegisterPageController">
+   <children>
+      <VBox prefHeight="200.0" prefWidth="559.0">
+         <children>
+            <Label alignment="CENTER" contentDisplay="TOP" prefHeight="30.0" prefWidth="559.0" text="추가" />
+            <HBox prefHeight="49.0" prefWidth="367.0" spacing="20.0">
+               <children>
+                  <Label alignment="CENTER" prefHeight="29.0" prefWidth="155.0" text="id :" />
+                  <TextField fx:id="idInput" alignment="CENTER_RIGHT" prefHeight="29.0" prefWidth="383.0" />
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </HBox>
+            <HBox prefHeight="49.0" prefWidth="367.0" spacing="20.0">
+               <children>
+                  <Label alignment="CENTER" prefHeight="29.0" prefWidth="155.0" text="phone :" />
+                  <TextField fx:id="phoneInput" alignment="CENTER_RIGHT" prefHeight="29.0" prefWidth="383.0" />
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </HBox>
+            <HBox prefHeight="49.0" prefWidth="367.0" spacing="20.0">
+               <children>
+                  <Label alignment="CENTER" prefHeight="29.0" prefWidth="155.0" text="email :" />
+                  <TextField fx:id="emailInput" alignment="CENTER_RIGHT" prefHeight="29.0" prefWidth="383.0"/>
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </HBox>
+            <HBox prefHeight="49.0" prefWidth="367.0" spacing="20.0">
+               <children>
+                  <Label alignment="CENTER" prefHeight="29.0" prefWidth="155.0" text="password :" />
+                  <TextField fx:id="passwordInput" alignment="CENTER_RIGHT" prefHeight="29.0" prefWidth="383.0"  />
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </HBox>
+         </children>
+      </VBox>
+      <Button fx:id="saveBtn" alignment="CENTER" contentDisplay="CENTER" layoutX="246.0" layoutY="250.0" mnemonicParsing="false" onAction="#save" text="저장" />
+
+   </children>
+</AnchorPane>

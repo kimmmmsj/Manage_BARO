@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.baro.CouponInsertPageController">
+    <VBox>
+        <HBox>
+            <Label text="coupon_title : "/>
+            <TextField fx:id="coupon_title_insert" />
+        </HBox>
+        <HBox>
+            <Label text="coupon_content "/>
+            <TextField fx:id="coupon_content_insert" prefWidth="500" prefHeight="200"/>
+        </HBox>
+        <HBox>
+            <Label text="coupon_condition "/>
+            <TextField fx:id="coupon_condition_insert" />
+        </HBox>
+        <HBox>
+            <Label text="coupon_discount "/>
+            <TextField fx:id="coupon_discount_insert" />
+        </HBox>
+        <HBox>
+            <Label text="coupon_type "/>
+            <TextField fx:id="coupon_type_insert" />
+        </HBox>
+        <HBox>
+            <Label text="coupon_enddate "/>
+            <TextField fx:id="coupon_enddate_insert" />
+        </HBox>
+        <HBox>
+            <Label text="coupon_number "/>
+            <TextField fx:id="coupon_number_insert"/>
+        </HBox>
+        <Button fx:id="insert_coupon" text="추가"/>
+    </VBox>
+
+</AnchorPane>

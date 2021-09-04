@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import com.jfoenix.controls.JFXListView?>
+<?import com.jfoenix.controls.JFXToggleButton?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.baro.MenuExtraInsertPageController">
+    <VBox AnchorPane.topAnchor="10" AnchorPane.leftAnchor="10" AnchorPane.rightAnchor="10">
+        <spacing>50</spacing>
+        <HBox>
+            <spacing>10</spacing>
+            <Label text="가게검색 : " />
+            <TextField fx:id="store_search_text_field" prefWidth="500"/>
+            <Button fx:id="search_button" text="검색"/>
+        </HBox>
+        <VBox fx:id="store_list_vbox">
+            <spacing>10</spacing>
+            <JFXListView fx:id="search_store_result_list"/>
+        </VBox>
+        <VBox fx:id="menu_extra_insert_vbox">
+            <HBox>
+                <Label text="extra_price" />
+                <TextField fx:id="extra_price_insert"/>
+            </HBox>
+            <HBox>
+                <Label text="extra_name" />
+                <TextField fx:id="extra_name_insert"/>
+            </HBox>
+            <HBox>
+                <Label text="is_required_option" />
+                <JFXToggleButton fx:id="set_required"/>
+            </HBox>
+            <HBox fx:id="required_hbox">
+                <Label text="required_group_name" />
+                <TextField fx:id="required_group_name_insert"/>
+            </HBox>
+            <Button fx:id="extra_menu_insert_button" text="추가"/>
+        </VBox>
+    </VBox>
+</AnchorPane>

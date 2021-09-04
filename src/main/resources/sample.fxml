@@ -1,0 +1,294 @@
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.StackPane?>
+<?import com.jfoenix.controls.JFXTabPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import com.jfoenix.controls.JFXToggleButton?>
+<?import javafx.scene.layout.TilePane?>
+<StackPane prefHeight="900" prefWidth="1400" xmlns="http://javafx.com/javafx/8.0.171"
+           xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.baro.MainPageController" stylesheets="css/backGroundSheet.css">
+    <children>
+        <JFXTabPane fx:id="tabContainer" side="LEFT">
+            <Tab fx:id="typeAddTab" closable="false">
+                <content>
+                    <ScrollPane>
+                        <AnchorPane fx:id="typeAddPane" prefWidth="1150.0" prefHeight="900">
+                            <children>
+
+                            </children>
+                        </AnchorPane>
+                    </ScrollPane>
+                </content>
+            </Tab>
+            <Tab fx:id="typeDeleteTab" closable="false">
+                <content>
+                    <ScrollPane>
+                        <AnchorPane fx:id="typeDeletePane" prefWidth="1150.0" prefHeight="900">
+                            <children>
+
+                            </children>
+                        </AnchorPane>
+                    </ScrollPane>
+                </content>
+            </Tab>
+            <Tab fx:id="ultraStoreInsertTab" closable="false">
+                <content>
+                    <ScrollPane>
+                        <AnchorPane fx:id="ultraStoreInsertPane" prefWidth="1150.0" prefHeight="900">
+                            <children>
+
+                            </children>
+                        </AnchorPane>
+                    </ScrollPane>
+                </content>
+            </Tab>
+            <Tab fx:id="ultraStoreDeleteTab" closable="false">
+                <content>
+                    <ScrollPane>
+                        <AnchorPane fx:id="ultraStoreDeletePane" prefWidth="1150.0" prefHeight="900">
+                            <children>
+
+                            </children>
+                        </AnchorPane>
+                    </ScrollPane>
+                </content>
+            </Tab>
+            <Tab fx:id="newStoreInsertTab" closable="false">
+                <content>
+                    <ScrollPane>
+                        <AnchorPane fx:id="newStoreInsertPane" prefWidth="1150.0" prefHeight="900">
+                            <children>
+
+                            </children>
+                        </AnchorPane>
+                    </ScrollPane>
+                </content>
+            </Tab>
+            <Tab fx:id="newStoreDeleteTab" closable="false">
+                <content>
+                    <ScrollPane>
+                        <AnchorPane fx:id="newStoreDeletePane" prefWidth="1150.0" prefHeight="900">
+                            <children>
+
+                            </children>
+                        </AnchorPane>
+                    </ScrollPane>
+                </content>
+            </Tab>
+            <Tab fx:id="menuInsertTab" closable="false">
+                <content>
+                    <ScrollPane>
+                        <AnchorPane fx:id="menuInsertPane" prefWidth="1150.0" prefHeight="900">
+                            <children>
+
+                            </children>
+                        </AnchorPane>
+                    </ScrollPane>
+                </content>
+            </Tab>
+            <Tab fx:id="menuDeleteTab" closable="false">
+                <content>
+                    <ScrollPane>
+                        <AnchorPane fx:id="menuDeletePane" prefWidth="1150.0" prefHeight="900">
+                            <children>
+
+                            </children>
+                        </AnchorPane>
+                    </ScrollPane>
+                </content>
+            </Tab>
+            <Tab fx:id="menuExtraInsertTab" closable="false">
+                <content>
+                    <ScrollPane>
+                        <AnchorPane fx:id="menuExtraInsertPane" prefWidth="1150.0" prefHeight="900">
+                            <children>
+
+                            </children>
+                        </AnchorPane>
+                    </ScrollPane>
+                </content>
+            </Tab>
+            <Tab fx:id="menuExtraDeleteTab" closable="false">
+                <content>
+                    <ScrollPane>
+                        <AnchorPane fx:id="menuExtraDeletePane" prefWidth="1150.0" prefHeight="900">
+                            <children>
+
+                            </children>
+                        </AnchorPane>
+                    </ScrollPane>
+                </content>
+            </Tab>
+<!--            <Tab fx:id="menuRequiredExtraDeleteTab" closable="false">-->
+<!--                <content>-->
+<!--                    <ScrollPane>-->
+<!--                        <AnchorPane fx:id="menuRequiredExtraDeletePane" prefWidth="1150.0" prefHeight="900">-->
+<!--                            <children>-->
+
+<!--                            </children>-->
+<!--                        </AnchorPane>-->
+<!--                    </ScrollPane>-->
+<!--                </content>-->
+<!--            </Tab>-->
+            <Tab fx:id="menuExtraApplyToMenuTab" closable="false">
+                <content>
+                    <ScrollPane>
+                        <AnchorPane fx:id="menuExtraApplyToMenuPane" prefWidth="1150.0" prefHeight="900">
+                            <children>
+
+                            </children>
+                        </AnchorPane>
+                    </ScrollPane>
+                </content>
+            </Tab>
+            <Tab fx:id="menuExtraExemptToMenuTab" closable="false">
+                <content>
+                    <ScrollPane>
+                        <AnchorPane fx:id="menuExtraExemptToMenuPane" prefWidth="1150.0" prefHeight="900">
+                            <children>
+
+                            </children>
+                        </AnchorPane>
+                    </ScrollPane>
+                </content>
+            </Tab>
+            <Tab fx:id="categoryInsertTab" closable="false">
+                <content>
+                    <ScrollPane>
+                        <AnchorPane fx:id="categoryInsertPane" prefWidth="1150.0" prefHeight="900">
+                            <children>
+
+                            </children>
+                        </AnchorPane>
+                    </ScrollPane>
+                </content>
+            </Tab>
+            <Tab fx:id="categoryDeleteTab" closable="false">
+                <content>
+                    <ScrollPane>
+                        <AnchorPane fx:id="categoryDeletePane" prefWidth="1150.0" prefHeight="900">
+                            <children>
+
+                            </children>
+                        </AnchorPane>
+                    </ScrollPane>
+                </content>
+            </Tab>
+            <Tab fx:id="ownerRegisterTab" closable="false">
+                <content>
+                    <ScrollPane>
+                        <AnchorPane fx:id="ownerRegisterPane" prefWidth="1150.0" prefHeight="900">
+                            <children>
+
+                            </children>
+                        </AnchorPane>
+                    </ScrollPane>
+                </content>
+            </Tab>
+            <Tab fx:id="storeInsertTab" closable="false">
+                <content>
+                    <ScrollPane>
+                        <AnchorPane fx:id="storeInsertPane" prefWidth="1150.0" prefHeight="900">
+                            <children>
+
+                            </children>
+                        </AnchorPane>
+                    </ScrollPane>
+                </content>
+            </Tab>
+            <Tab fx:id="storeDeleteTab" closable="false">
+                <content>
+                    <ScrollPane>
+                        <AnchorPane fx:id="storeDeletePane" prefWidth="1150.0" prefHeight="900">
+                            <children>
+
+                            </children>
+                        </AnchorPane>
+                    </ScrollPane>
+                </content>
+            </Tab>
+            <Tab fx:id="alertInsertTab" closable="false">
+                <content>
+                    <ScrollPane>
+                        <AnchorPane fx:id="alertInsertPane" prefWidth="1150.0" prefHeight="900">
+                            <children>
+
+                            </children>
+                        </AnchorPane>
+                    </ScrollPane>
+                </content>
+            </Tab>
+            <Tab fx:id="alertDeleteTab" closable="false">
+                <content>
+                    <ScrollPane>
+                        <AnchorPane fx:id="alertDeletePane" prefWidth="1150.0" prefHeight="900">
+                            <children>
+
+                            </children>
+                        </AnchorPane>
+                    </ScrollPane>
+                </content>
+            </Tab>
+            <Tab fx:id="couponInsertTab" closable="false">
+                <content>
+                    <ScrollPane>
+                        <AnchorPane fx:id="couponInsertPane" prefWidth="1150.0" prefHeight="900">
+                            <children>
+
+                            </children>
+                        </AnchorPane>
+                    </ScrollPane>
+                </content>
+            </Tab>
+            <Tab fx:id="couponDeleteTab" closable="false">
+                <content>
+                    <ScrollPane>
+                        <AnchorPane fx:id="couponDeletePane" prefWidth="1150.0" prefHeight="900">
+                            <children>
+
+                            </children>
+                        </AnchorPane>
+                    </ScrollPane>
+                </content>
+            </Tab>
+            <Tab fx:id="orderCancelTab" closable="false">
+                <content>
+                    <ScrollPane>
+                        <AnchorPane fx:id="orderCancelPane" prefWidth="1150.0" prefHeight="900">
+                            <children>
+
+                            </children>
+                        </AnchorPane>
+                    </ScrollPane>
+                </content>
+            </Tab>
+            <Tab fx:id="marketingTab" closable="false">
+                <content>
+                    <ScrollPane>
+                        <AnchorPane fx:id="marketingPane" prefWidth="1150.0" prefHeight="900">
+                            <children>
+
+                            </children>
+                        </AnchorPane>
+                    </ScrollPane>
+                </content>
+            </Tab>
+            <Tab fx:id="payBackTab" closable="false">
+                <content>
+                    <ScrollPane>
+                        <AnchorPane fx:id="payBackPane" prefWidth="1150.0" prefHeight="900">
+                            <children>
+
+                            </children>
+                        </AnchorPane>
+                    </ScrollPane>
+                </content>
+            </Tab>
+        </JFXTabPane>
+    </children>
+</StackPane>
